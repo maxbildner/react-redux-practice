@@ -1,5 +1,5 @@
 // ACTIONS
-// - paylods of info 
+// - paylods of info that we want to send to store
 // - POJO (Plain Old Javascript Object)
 // - must have a 'type' property
 // Ex.
@@ -32,18 +32,18 @@ export const VisibilityFilters = {
 export function addTodo(text) {
   return ({
     type: ADD_TODO,
-    text                      // syntactic sugar for text: text
+    text                                                                        // syntactic sugar for text: text
   });
 }
 
-export function toggleTodo(index) {
+export function toggleTodo(index) {                                             // changes todo we want to display
   return {
     type: TOGGLE_TODO,
     index
   }
 }
 
-export function setVisibilityFilter(filter) {
+export function setVisibilityFilter(filter) {                                   // changes how we want to filter todos
   return {
     type: SET_VISIBILITY_FILTER,
     filter
