@@ -25,3 +25,18 @@ export default rootReducer;
 //   b: processB,
 //   c: c
 // })
+
+// Global Store/State should look like this:
+// {
+//   visibilityFilter: 'SHOW_ALL',
+//     todos: [
+//       {
+//         text: 'Consider using Redux',
+//         completed: true
+//       },
+//       {
+//         text: 'Keep all state in a single tree',
+//         completed: false
+//       }
+//     ]
+// }
