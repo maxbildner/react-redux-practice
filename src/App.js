@@ -3,6 +3,8 @@ import { Provider } from 'react-redux';                                         
 import { createStore } from 'redux';
 import rootReducer from './reducers/rootReducer';                               // DEFAULT EXPORT ex. = export default rootReducer
 import AddTodoContainer from './containers/AddTodoContainer';
+import VisibleTodoListContainer from './containers/VisibleTodoListContainer';
+
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
     // Provider makes the redux store available to al nested components wrapped in connect()
     <Provider store={store}>                                                    
       <AddTodoContainer />
+      <VisibleTodoListContainer />
     </Provider>
   );
 }
