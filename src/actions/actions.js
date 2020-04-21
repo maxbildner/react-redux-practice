@@ -26,17 +26,22 @@ export const VisibilityFilters = {
 };
 
 
+let nextTodoId = 0;                                                             // counter for id below
+
 // ACTION CREATORS
 // - function that create (return) actions
 // Ex.
 export function addTodo(text) {
   return ({
     type: ADD_TODO,
+    id: nextTodoId++,
     text                                                                        // syntactic sugar for text: text
   });
 }
 
 export function toggleTodo(index) {                                             // changes todo we want to display
+  debugger
+  
   return {
     type: TOGGLE_TODO,
     index

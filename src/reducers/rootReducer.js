@@ -6,8 +6,8 @@ import visibilityFilterReducer from './visibilityFilter';
 // - ? returns a function that calls every child reducer and gathers (hence the name reduce like the reducing function)
 //   results into a single state object
 const rootReducer = combineReducers({
-  visibilityFilterReducer,
   todos,
+  visibilityFilterReducer,
 });
 
 export default rootReducer;

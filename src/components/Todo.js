@@ -2,11 +2,12 @@ import React from 'react';
 // import PropTypes from 'prop-types';                                             // ?
 
 // Presentational (stateless) component
-const Todo = ({ onClick, completed, text}) => {
-
+const Todo = ({ handleClickTodo, completed, text}) => {
+	debugger
+	
 	return (
 		<li className="todo-li"
-			onClick={onClick}
+			onClick={handleClickTodo}
 			style={{textDecoration: completed ? 'line-through' : 'none'}}
 		>
 			{text}

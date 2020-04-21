@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addTodo } from '../actions';
+import { addTodo } from '../actions/actions';
 
 
 const AddTodoContainer = ({ dispatch }) => {
@@ -27,4 +27,4 @@ const AddTodoContainer = ({ dispatch }) => {
 	);
 }
 
-export default connect()(AddTodo);
+export default connect()(AddTodoContainer);

@@ -4,12 +4,16 @@ import Todo from './Todo';
 
 
 // presentational component returns a <ul> with an array of all the Todo subcomponents
-const TodoList = ({ todos, onTodoClick }) => {
+const TodoList = ({ todos, toggleTodo }) => {
+	debugger
+
 	return (
 		<ul>
 			{todos.map((todo, idx) => {
+				debugger
+
 				return (
-					<Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)}/>
+					<Todo key={todo.id} {...todo} handleClickTodo={() => toggleTodo(todo.id)}/>
 				);
 			})}
 		</ul>
