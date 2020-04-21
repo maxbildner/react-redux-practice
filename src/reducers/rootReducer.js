@@ -1,14 +1,16 @@
 import { combineReducers } from 'redux';                                        
-import todos from './todos';
-import visibilityFilterReducer from './visibilityFilter';
+import todosReducer from './todosReducer';
+import visibilityFilterReducer from './visibilityFilterReducer';
 
 // - combineReducers takes in an object, where each value is a different reducing function
 // - ? returns a function that calls every child reducer and gathers (hence the name reduce like the reducing function)
 //   results into a single state object
 const rootReducer = combineReducers({
-  todos,
+  todos: todosReducer,
   visibilityFilterReducer,
 });
+
+console.log(rootReducer);
 
 export default rootReducer;
 

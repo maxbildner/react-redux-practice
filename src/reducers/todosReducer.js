@@ -6,7 +6,7 @@ import {
 
 // TODOS REDUCER
 // this slice of state is an array of objects (todos)
-const todos = (state = [], action) => {
+const todosReducer = (state = [], action) => {
   debugger
   let newState = [];
 
@@ -33,4 +33,4 @@ const todos = (state = [], action) => {
   }
 };
 
-export default todos;
+export default todosReducer;

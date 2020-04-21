@@ -12,7 +12,7 @@ import {
 
 function visibilityFilterReducer(state = VisibilityFilters.SHOW_ALL, action) {
 	debugger
-	
+
 	switch (action.type) {
 		case SET_VISIBILITY_FILTER:
 			return Object.assign({}, state, {																					// Object assign returns new object where 2nd arg is copied into first arg target

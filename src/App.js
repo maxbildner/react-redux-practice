@@ -4,7 +4,7 @@ import { createStore } from 'redux';
 import rootReducer from './reducers/rootReducer';                               // DEFAULT EXPORT ex. = export default rootReducer
 import AddTodoContainer from './containers/AddTodoContainer';
 import VisibleTodoListContainer from './containers/VisibleTodoListContainer';
-
+import Footer from './components/Footer';
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
     <Provider store={store}>                                                    
       <AddTodoContainer />
       <VisibleTodoListContainer />
+      <Footer />
     </Provider>
   );
 }
