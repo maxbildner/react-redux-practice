@@ -5,18 +5,22 @@ import { addTodo } from '../actions/actions';
 
 const AddTodoContainer = ({ dispatch }) => {
 	let input;
-	
+	debugger
+
 	return (
 		<div>
 			<form
 				onSubmit={e => { 
-					e.preventDefault()
+					debugger
+					e.preventDefault();
+					debugger
 
-					if (!input.value.trim()) {
+					if (!input.value.trim()) {																						// ?
+						debugger
 						return;
 					}
 
-					dispatch(addTodo(input.value));
+					dispatch(addTodo(input.value));																				// ? how does submit callback magically have access to input html element if it hasn't been set/passed in?
 					input.value = '';
 				}}
 			>

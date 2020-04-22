@@ -9,8 +9,8 @@ const rootReducer = combineReducers({
   todos: todosReducer,
   visibilityFilter: visibilityFilterReducer,
 });
-
-console.log(rootReducer);
+         
+console.log(rootReducer);                                                       // won't be logged until all debuggers have been hit
 
 export default rootReducer;
 

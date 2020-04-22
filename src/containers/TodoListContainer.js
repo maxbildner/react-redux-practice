@@ -9,12 +9,19 @@ const getVisibleTodos = (todos, filter) => {
 
   switch (filter) {
 		case VisibilityFilters.SHOW_ALL:
+			debugger
 			return todos;
+
 		case VisibilityFilters.SHOW_COMPLETED:
+			debugger
 			return todos.filter(t => t.completed);
+
 		case VisibilityFilters.SHOW_ACTIVE:
+			debugger
 			return todos.filter(t => !t.completed);
+		
 		default:
+			debugger
 			throw new Error('Unknown filter: ' + filter);
 	}
 }

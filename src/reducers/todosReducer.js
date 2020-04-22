@@ -8,10 +8,11 @@ import {
 // this slice of state is an array of objects (todos)
 const todosReducer = (state = [], action) => {
   debugger
-  let newState = [];
 
   switch (action.type) {
     case ADD_TODO:
+      debugger
+
       return [
         ...state,
           {                                                                     // add new object/todo to array slice of state
@@ -22,6 +23,8 @@ const todosReducer = (state = [], action) => {
       ];
 
     case TOGGLE_TODO:                                                           // toggling means changing its completed/not completed status
+      debugger
+
       // loop through todos array, and if we have a match for action.index, flip the completed value true/false
       return state.map( todo => {                                               // return new array where the todo that matches that action.id, completed status is changed
         return ((todo.id === action.index) ? { ...todo, completed: !todo.completed } : todo)

@@ -32,6 +32,8 @@ let nextTodoId = 0;                                                             
 // - function that create (return) actions
 // Ex.
 export function addTodo(text) {
+  debugger
+
   return ({
     type: ADD_TODO,
     id: nextTodoId++,
@@ -41,7 +43,7 @@ export function addTodo(text) {
 
 export function toggleTodo(index) {                                             // changes todo we want to display
   debugger
-  
+
   return {
     type: TOGGLE_TODO,
     index
@@ -49,6 +51,8 @@ export function toggleTodo(index) {                                             
 }
 
 export function setVisibilityFilter(filter) {                                   // changes how we want to filter todos
+  debugger
+  
   return {
     type: SET_VISIBILITY_FILTER,
     filter

@@ -9,7 +9,7 @@ const TodoList = ({ todos, toggleTodo }) => {
 
 	return (
 		<ul>
-			{todos.map((todo, idx) => {
+			{todos.map((todo) => {
 				debugger
 
 				return (
