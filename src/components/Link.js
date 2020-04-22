@@ -2,21 +2,32 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 
 
-const Link = ({ active, children, onClick }) => {
-	if (active) {
-		return <span>{children}</span>
-	}
+const Link = ({ active, children, onClick }) => {																// ? where is children coming from?
+	// if (active) {
+	// 	return <span>{children}</span>
+	// }
+	// debugger
+	// return (
+	// 	<a
+	// 		href=""
+	// 		onClick={e => {
+	// 			e.preventDefault()
+	// 			onClick()
+	// 		}}
+	// 	>
+	// 		{children}
+	// 	</a>
+	// );
+	debugger
 
 	return (
-		<a
-			href=""
-			onClick={e => {
-				e.preventDefault()
-				onClick()
-			}}
+		<button
+			onClick={onClick}
+			disabled={active}
+			style={{marginLeft:'4px'}}
 		>
 			{children}
-		</a>
+		</button>
 	);
 }
 

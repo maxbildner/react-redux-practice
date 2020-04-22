@@ -3,14 +3,15 @@ import FilterLinkContainer from '../containers/FilterLinkContainer';
 import { VisibilityFilters } from '../actions/actions';
 
 const Footer = () => {
+	debugger
+
   return (
-		<p>
-			Show: <FilterLinkContainer filter={VisibilityFilters.SHOW_ALL}>ALL</FilterLinkContainer>
-			{', '}
-			Show: <FilterLinkContainer filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLinkContainer>
-			{', '}
-			Show: <FilterLinkContainer filter={VisibilityFilters.SHOW_COMPLETED}>Completed</FilterLinkContainer>
-		</p>
+		<div>
+			<span>SHOW: </span>
+			<FilterLinkContainer filter={VisibilityFilters.SHOW_ALL}>ALL</FilterLinkContainer>
+			<FilterLinkContainer filter={VisibilityFilters.SHOW_ACTIVE}>ACTIVE</FilterLinkContainer>
+			<FilterLinkContainer filter={VisibilityFilters.SHOW_COMPLETED}>COMPLETED</FilterLinkContainer>
+		</div>
 	);
 }
 
