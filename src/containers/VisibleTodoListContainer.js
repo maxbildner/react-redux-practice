@@ -5,7 +5,7 @@ import { VisibilityFilters } from '../actions/actions';
 
 // this is the function we're giving the presentational component access to
 const getVisibleTodos = (todos, filter) => {
-	// debugger
+	debugger
 
   switch (filter) {
 		case VisibilityFilters.SHOW_ALL:
@@ -23,13 +23,13 @@ const mapStateToProps = state => {
 	debugger
 
 	return ({
-		todos: getVisibleTodos(state.todos, state.visibilityFilterReducer)
+		todos: getVisibleTodos(state.todos, state.visibilityFilter)
 	});
 }
 
 const mapDispatchToProps = dispatch => {
 	debugger
-	
+
 	return ({
 		toggleTodo: id => dispatch(toggleTodo(id))
 	});

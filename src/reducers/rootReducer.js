@@ -7,7 +7,7 @@ import visibilityFilterReducer from './visibilityFilterReducer';
 //   results into a single state object
 const rootReducer = combineReducers({
   todos: todosReducer,
-  visibilityFilterReducer,
+  visibilityFilter: visibilityFilterReducer,
 });
 
 console.log(rootReducer);
@@ -31,7 +31,7 @@ export default rootReducer;
 // Global Store/State should look like this:
 // {
 //   visibilityFilter: 'SHOW_ALL',
-//     todos: [
+//   todos: [
 //       {
 //         text: 'Consider using Redux',
 //         completed: true
