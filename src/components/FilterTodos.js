@@ -2,11 +2,11 @@ import React from 'react';
 import FilterLinkContainer from '../containers/FilterLinkContainer';
 import { VisibilityFilters } from '../actions/actions';
 
-const Footer = () => {
+const FilterTodos = () => {
 	debugger
 
   return (
-		<div>
+		<div className="filter-todos-wrap">
 			<span>SHOW: </span>
 			<FilterLinkContainer filter={VisibilityFilters.SHOW_ALL}>ALL</FilterLinkContainer>
 			<FilterLinkContainer filter={VisibilityFilters.SHOW_ACTIVE}>ACTIVE</FilterLinkContainer>
@@ -15,4 +15,4 @@ const Footer = () => {
 	);
 }
 
-export default Footer;
+export default FilterTodos;

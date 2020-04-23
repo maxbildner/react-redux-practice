@@ -34,11 +34,13 @@ export default rootReducer;
 //   todos: [
 //       {
 //         text: 'Consider using Redux',
-//         completed: true
+//         completed: true,
+//         id: 0
 //       },
 //       {
 //         text: 'Keep all state in a single tree',
-//         completed: false
+//         completed: false,
+//         id: 1
 //       }
 //     ]
 // }

@@ -8,7 +8,7 @@ const AddTodoContainer = ({ dispatch }) => {
 	debugger
 
 	return (
-		<div>
+		<div className="add-todo-wrap">
 			<form
 				onSubmit={e => { 
 					debugger
@@ -25,7 +25,7 @@ const AddTodoContainer = ({ dispatch }) => {
 				}}
 			>
 			<input ref={node => input = node} />
-			<button type="submit">ADD TODO</button>
+			<button type="submit" className="add-todo-button">ADD TODO</button>
 			</form>
 		</div>
 	);

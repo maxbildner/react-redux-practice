@@ -3,21 +3,6 @@ import React from 'react';
 
 
 const Link = ({ active, children, onClick }) => {																// ? where is children coming from?
-	// if (active) {
-	// 	return <span>{children}</span>
-	// }
-	// debugger
-	// return (
-	// 	<a
-	// 		href=""
-	// 		onClick={e => {
-	// 			e.preventDefault()
-	// 			onClick()
-	// 		}}
-	// 	>
-	// 		{children}
-	// 	</a>
-	// );
 	debugger
 
 	return (

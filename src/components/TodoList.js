@@ -8,12 +8,15 @@ const TodoList = ({ todos, toggleTodo }) => {
 	debugger
 
 	return (
-		<ul>
+		<ul className="todo-list">
 			{todos.map((todo) => {
 				debugger
 
 				return (
-					<Todo key={todo.id} {...todo} handleClickTodo={() => toggleTodo(todo.id)}/>
+					<div className="todo-wrap" key={todo.id}>
+						<Todo key={todo.id} {...todo} handleClickTodo={() => toggleTodo(todo.id)}/>
+						<button className="delete-todo">DELETE</button>
+					</div>
 				);
 			})}
 		</ul>

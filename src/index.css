@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-wrap {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
+  background: lightblue;
+}
+
+.todo-li:hover {
+  cursor: pointer;
+  background: lightgrey;
+}
+
+.todo-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-list {
+  max-width: 150px;
+  background: lightcoral;
+}
+
+.add-todo-wrap {
+  background: lightgrey;
+}
+
+.filter-todos-wrap {
+  background: lightskyblue;
+  margin-top: 15px;
+}

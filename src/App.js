@@ -4,7 +4,7 @@ import { createStore } from 'redux';
 import rootReducer from './reducers/rootReducer';                               // DEFAULT EXPORT ex. = export default rootReducer
 import AddTodoContainer from './containers/AddTodoContainer';
 import TodoListContainer from './containers/TodoListContainer';
-import Footer from './components/Footer';
+import FilterTodos from './components/FilterTodos';
 
 function App() {
 
@@ -14,10 +14,12 @@ function App() {
 
   return (
     // Provider makes the redux store available to al nested components wrapped in connect()
-    <Provider store={store}>                                                    
-      <AddTodoContainer />                                                      
-      <TodoListContainer />
-      <Footer />
+    <Provider store={store}> 
+      <div className="app-wrap">
+        <AddTodoContainer />                                                      
+        <FilterTodos />
+        <TodoListContainer />
+      </div>                                                   
     </Provider>
   );
 }
