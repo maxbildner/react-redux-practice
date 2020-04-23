@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { toggleTodo } from '../actions/actions';
+import { toggleTodo, removeTodo } from '../actions/actions';
 import TodoList from '../components/TodoList';                                  // presentational component that this container is connecting the store to
 import { VisibilityFilters } from '../actions/actions';
 
@@ -38,7 +38,8 @@ const mapDispatchToProps = dispatch => {
 	debugger
 
 	return ({
-		toggleTodo: id => dispatch(toggleTodo(id))
+		toggleTodo: id => dispatch(toggleTodo(id)),
+		removeTodo: id => dispatch(removeTodo(id))
 	});
 }
 

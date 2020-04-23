@@ -16,6 +16,7 @@ function App() {
     // Provider makes the redux store available to al nested components wrapped in connect()
     <Provider store={store}> 
       <div className="app-wrap">
+        <div className="description">React/Redux ToDo App</div>
         <AddTodoContainer />                                                      
         <FilterTodos />
         <TodoListContainer />

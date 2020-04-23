@@ -17,6 +17,10 @@ code {
   margin: 0 auto;
 }
 
+.description {
+  margin-top: 15px;
+}
+
 button:hover {
   cursor: pointer;
   background: lightblue;

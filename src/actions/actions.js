@@ -50,6 +50,15 @@ export function toggleTodo(index) {                                             
   }
 }
 
+export function removeTodo(index) {
+  debugger
+  
+  return {
+    type: REMOVE_TODO,
+    index
+  }
+}
+
 export function setVisibilityFilter(filter) {                                   // changes how we want to filter todos
   debugger
   

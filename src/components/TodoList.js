@@ -4,7 +4,7 @@ import Todo from './Todo';
 
 
 // presentational component returns a <ul> with an array of all the Todo subcomponents
-const TodoList = ({ todos, toggleTodo }) => {
+const TodoList = ({ todos, toggleTodo, removeTodo }) => {
 	debugger
 
 	return (
@@ -15,7 +15,7 @@ const TodoList = ({ todos, toggleTodo }) => {
 				return (
 					<div className="todo-wrap" key={todo.id}>
 						<Todo key={todo.id} {...todo} handleClickTodo={() => toggleTodo(todo.id)}/>
-						<button className="delete-todo">DELETE</button>
+						<button onClick={() => removeTodo(todo.id)} className="delete-todo">DELETE</button>
 					</div>
 				);
 			})}

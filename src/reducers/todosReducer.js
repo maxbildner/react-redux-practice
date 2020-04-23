@@ -30,6 +30,13 @@ const todosReducer = (state = [], action) => {
         return ((todo.id === action.index) ? { ...todo, completed: !todo.completed } : todo)
       });
 
+    case REMOVE_TODO:
+      debugger
+
+      return state.filter( todo => {
+        return todo.id !== action.index;
+      });
+
     default:
       debugger
       return state;
@@ -37,3 +44,17 @@ const todosReducer = (state = [], action) => {
 };
 
 export default todosReducer;
+
+// todos slice of state looks like this:
+// state = [
+//       {
+//         text: 'Consider using Redux',
+//         completed: true,
+//         id: 0
+//       },
+//       {
+//         text: 'Keep all state in a single tree',
+//         completed: false,
+//         id: 1
+//       }
+//     ]
