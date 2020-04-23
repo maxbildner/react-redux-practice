@@ -34,14 +34,34 @@ button:hover {
 
 .todo-list {
   max-width: 150px;
-  background: lightcoral;
+  /* background: lightcoral; */
 }
 
 .add-todo-wrap {
-  background: lightgrey;
+  /* background: lightgrey; */
+  margin-top: 15px;
+}
+
+.add-todo-wrap form {
+  display: flex;  
+  width: 250px;
+  /* background: aliceblue; */
+  justify-content: space-between;
+}
+
+.add-todo-wrap form input {
+  width: 162px;
 }
 
 .filter-todos-wrap {
-  background: lightskyblue;
+  /* background: lightskyblue; */
   margin-top: 15px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-todos-wrap span {
+  font-size: 14px;
+  font-weight: 600;
 }
